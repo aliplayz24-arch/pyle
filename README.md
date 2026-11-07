@@ -37,7 +37,7 @@ git clone [https://github.com/aliplayz24-arch/pyle.git](https://github.com/alipl
 cd pyle
 
 # Compile the transpiler with full optimizations
-ghc -O2 pyle.hs -o pyle
+ghc -dynamic -O2 pyle.hs -o pyle
 
 # Optional: Move to your local path for global access
 install -Dm755 pyle ~/.local/bin/pyle
